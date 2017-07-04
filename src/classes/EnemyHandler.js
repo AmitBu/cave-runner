@@ -13,7 +13,9 @@ export default class EnemyHandler {
 	setup() {
 		this.enemiesArray = [
 			new Enemy(Images.ENEMY_RAT, this._app),
-			new Enemy(Images.ENEMY_HAND, this._app, {y: this._app.renderer.height / 1.3})
+			new Enemy(Images.ENEMY_RAT2, this._app),
+			new Enemy(Images.ENEMY_HAND, this._app, {y: this._app.renderer.height / 1.3}),
+			new Enemy(Images.ENEMY_SPIDER, this._app, {y: 20})
 		];
 
 		this.changeCurrentItem();
