@@ -2,13 +2,17 @@ import { Sprite, Texture, extras } from 'pixi.js'
 // const  = pixi;
 
 export default class ImageAsset {
-    constructor(src, app = null) {
+    constructor(src, app = null, options = null) {
         this._src = src;
         this._element = this._getSpriteFromSrc(src);
 
         // Sets the pixi app object if sent
         if (app) {
             this._app = app;
+        }
+
+        if (options) {
+            this._options = options;
         }
 
         this.setup();

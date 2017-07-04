@@ -16,17 +16,17 @@ export default class GameOverScene extends ContainerElement {
 	}
 
 	setup() {
-		this._textElement = new TextElement('Game Over', '82px Arial', '#000000');
+		this._textElement = new ImageAsset(Images.GAME_OVER_TEXT)//new TextElement('Game Over', '82px Arial', '#000000');
 		this._scoreElement = new TextElement('Score: ', '34px Arial');
-		this._btnElement = new TextElement('Press to reload', '42px Arial');
+		this._btnElement = new ImageAsset(Images.BTN_RELOAD);//new TextElement('Press to reload', '42px Arial');
 
 
 		this.addChild(this._textElement);
 		this.addChild(this._scoreElement);
 		this.addChild(this._btnElement);
 
-		this.moveElement(this._btnElement, 60, 100);
-		this.moveElement(this._scoreElement, 140, 150);
+		this.moveElement(this._btnElement, 170, 120);
+		this.moveElement(this._scoreElement, 140, 220);
 
 		// Pointers normalize touch and mouse
 		this.childToButton(this._btnElement, this._onRestartClick);
