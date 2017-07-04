@@ -7,7 +7,7 @@
     "web": "npm run build && ./node_modules/.bin/http-server ./build/",
     "deploy": "npm run build",
     "build": "./node_modules/.bin/rimraf build && ./node_modules/.bin/webpack --bail --progress --profile",
-    "start": "webpack-dev-server --content-base build/  --inline --port=3000"
+    "start": "npm run build && ./node_modules/.bin/http-server ./build/"
   },
   "dependencies": {
     "http-server": "^0.10.0",
