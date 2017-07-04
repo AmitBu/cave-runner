@@ -7,9 +7,11 @@
     "web": "npm run build && ./node_modules/.bin/http-server ./build/",
     "deploy": "npm run build",
     "build": "./node_modules/.bin/rimraf build && ./node_modules/.bin/webpack --bail --progress --profile",
-    "start": "npm run build && ./node_modules/.bin/http-server ./build/"
+    "start": "webpack-dev-server --content-base build/  --inline --port=3000"
   },
   "dependencies": {
+    "express": "^4.15.3",
+    "gzippo": "^0.2.0",
     "http-server": "^0.10.0",
     "pixi.js": "4.4.0",
     "react": "0.14.7",
