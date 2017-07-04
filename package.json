@@ -4,6 +4,7 @@
   "author": "AmitBu",
   "description": "Project boilerplate",
   "scripts": {
+    "deploy": "npm run build",
     "build": "./node_modules/.bin/rimraf build && ./node_modules/.bin/webpack --bail --progress --profile",
     "start": "webpack-dev-server --content-base build/  --inline --port=3000"
   },
