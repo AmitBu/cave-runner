@@ -2,6 +2,8 @@
 
 ![Cave runner screenshot](/src/assets/screenshot/CaveRunner.png?raw=true "Cave Runner")
 
+Game url: http://cave-runner.herokuapp.com/
+
 ## Gameplay
 
 Press the `space` button to jump over the obstacles, and restart the game on 'Game Over'
